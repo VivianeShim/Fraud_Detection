@@ -12,13 +12,13 @@ Imbalanced Data: most of the transactions (99.8%) are not fraudulent, making it 
 
 ## System Pipelines
 
-Data Preprocessing: Since I have large datasets with a huge number of rows and columns, data preprocessing is required.
-• I clean both train_transaction and train_identity before emerging two dataframes.
-• There are a lot of missing values on train_transaction.csv. If the percentage of missing value is more than 0.9, I drop the column.
-• If the percentage of missing values is small and the column contains numerical values, I replace the missing values with median since the column is not normally distributed most of the time. There is the skewness.
-• When the column contains categorical values, I covert each value in a column to a number.
-• ‘R_emaildomain,’ ‘P_emaildomain’- I manually group emails when the email has the same value. For example, I replace ‘yahoo.com.mx’ and ‘yahoo.co.jp’ by ‘yahoo.com.’ I covert each value to a number after grouping them together.
-• On train-identity dataframe, ‘DeviceInfo’ column contains too many categories, so I predict the top 20 devices and replace the top 10 by 1 to 10. I replace other categories by 11.
+Data Preprocessing: Since I have large datasets with a huge number of rows and columns, data preprocessing is required.  <br/>
+• I clean both train_transaction and train_identity before emerging two dataframes.  <br/>
+• There are a lot of missing values on train_transaction.csv. If the percentage of missing value is more than 0.9, I drop the column.  <br/>
+• If the percentage of missing values is small and the column contains numerical values, I replace the missing values with median since the column is not normally distributed most of the time. There is the skewness.  <br/>
+• When the column contains categorical values, I covert each value in a column to a number. <br/>
+• ‘R_emaildomain,’ ‘P_emaildomain’- I manually group emails when the email has the same value. For example, I replace ‘yahoo.com.mx’ and ‘yahoo.co.jp’ by ‘yahoo.com.’ I covert each value to a number after grouping them together.  <br/>
+• On train-identity dataframe, ‘DeviceInfo’ column contains too many categories, so I predict the top 20 devices and replace the top 10 by 1 to 10. I replace other categories by 11. 
 
 ## Algorithm
 
