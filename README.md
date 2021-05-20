@@ -1,5 +1,7 @@
 # Fraud_Detection
 
+
+
 ## Introduction
 This project is to build machine learning models to predict the probability that an online transaction is fraudulent, as denoted by the binary target “isFraud.” 
 After merging the provided datasets, I got one large-scale train dataset to manipulate, which contains 590,540 rows and 434 features.
@@ -18,8 +20,10 @@ Data Preprocessing: Since I have large datasets with a huge number of rows and c
 • If the percentage of missing values is small and the column contains numerical values, I replace the missing values with median since the column is not normally distributed most of the time. There is the skewness.  <br/>
 • When the column contains categorical values, I covert each value in a column to a number. <br/>
 • ‘R_emaildomain,’ ‘P_emaildomain’- I manually group emails when the email has the same value. For example, I replace ‘yahoo.com.mx’ and ‘yahoo.co.jp’ by ‘yahoo.com.’ I covert each value to a number after grouping them together.  <br/>
+![Figure2](https://user-images.githubusercontent.com/49568184/118905933-b4328580-b8ea-11eb-8fe6-164166ba42ac.jpg)
+![Figure3](https://user-images.githubusercontent.com/49568184/118905934-b4cb1c00-b8ea-11eb-913f-808e22b3a090.jpg)
 • On train-identity dataframe, ‘DeviceInfo’ column contains too many categories, so I predict the top 20 devices and replace the top 10 by 1 to 10. I replace other categories by 11. 
-
+![Figure4](https://user-images.githubusercontent.com/49568184/118905932-b4328580-b8ea-11eb-9c34-887b9c04b4ae.jpg)
 ## Algorithm
 
 In the modeling part, I tried three algorithms: light gradient boosting machine.
