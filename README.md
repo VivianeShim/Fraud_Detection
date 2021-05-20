@@ -24,7 +24,7 @@ Data Preprocessing: Since I have large datasets with a huge number of rows and c
 
 In the modeling part, I tried three algorithms: light gradient boosting machine.
 
-• I tried the LightGBM model with default hyperparameters. The testing AUC score is above 0.94, and it runs much faster.
+• I tried the LightGBM model with default hyperparameters. The testing AUC score is above 0.93, and it runs much faster.
 
 ![Figure1](https://user-images.githubusercontent.com/49568184/118905362-8b5dc080-b8e9-11eb-90f9-086405dd7c54.jpg)
 
